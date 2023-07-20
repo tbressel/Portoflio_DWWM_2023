@@ -1,0 +1,180 @@
+$proportions-cube: 0.4;
+$vitesse-cube : 10s;
+$eloignement-cube: 500px;
+$dimfaces : 300px * $proportions-cube;
+$posoeil : 150px * $proportions-cube;
+
+
+.cube {
+
+    .container {
+        position: relative; 
+        z-index: -2;  
+        transition: 1s ease-in-out;
+       
+        margin: auto;
+        margin-top: 100px;
+        width: $dimfaces;
+        height: $dimfaces;
+        perspective: $eloignement-cube;
+   
+        .container-cube {
+            position: absolute;
+           
+            top:-100px;
+            transform-style: preserve-3d;
+            height: 100%;
+            width: 100%;
+            // animation OK
+            animation: pivoter $vitesse-cube infinite linear;
+ 
+
+            .face {
+                background-color: $color2bis;                
+                position: absolute;
+                border: 1px solid $color1;
+                border-radius: 50px;
+                width: $dimfaces;
+                height: $dimfaces;
+                &:hover {
+                    background-color: $color4bis;
+                }
+
+                p {
+                    display: flex;
+                    justify-content: center;
+                    text-transform: capitalize;
+                    padding: 1rem;
+                    padding-top: 30%;
+                    text-shadow: 4px 2px 3px rgba(31, 1, 138, 0.438);
+                    font-size: 1.2rem;
+                   
+
+                    &::after {
+                        content:""
+                        
+                    }
+                }
+                i {
+                    display: flex;
+                    justify-content: center;
+                    text-transform: capitalize;
+                    text-shadow: 4px 2px 3px rgba(31, 1, 138, 0.438);                  
+                    font-size: 0.75rem;
+                    transform: rotateY(180deg);
+                    transform: rotate(180deg);
+                  
+
+                }
+            }
+
+            .container-cube-top {
+                transform: rotateX(90deg) translateZ($posoeil);
+                &:hover {
+                    background-color: $color4bis;
+                }
+            }
+
+            .container-cube-bot {
+                transform: rotateX(-90deg) translateZ($posoeil);
+                &:hover {
+                    background-color: $color4bis;
+                }
+            }
+
+            .container-cube-front {
+                
+                transform: rotateX(0deg) translateZ($posoeil);
+                &:hover {
+                    background-color: $color4bis;
+                }
+            }
+
+            .container-cube-back {
+                transform: rotateX(-180deg) translateZ($posoeil);
+                &:hover {
+                    background-color: $color4bis;
+                }
+            }
+
+            .container-cube-left {
+                transform: rotateY(90deg) translateZ($posoeil);
+                &:hover {
+                    background-color: $color4bis;
+                }
+            }
+
+            .container-cube-right {
+                transform: rotateY(-90deg) translateZ($posoeil);
+                &:hover {
+                    background-color: $color4bis;
+                }
+            }
+        }
+    }
+}
+
+
+// pivote du cube
+
+@keyframes pivoter {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+    
+}
+
+
+@media screen and (min-width:560px) {
+
+$proportions-cube: 0.9;
+$vitesse-cube : 10s;
+$eloignement-cube: 500px;
+$dimfaces : 300px * $proportions-cube;
+$posoeil : 150px * $proportions-cube;
+
+
+.cube  {
+    .container {
+
+        transition: 1s ease-in-out;
+        width: $dimfaces;
+        height: $dimfaces;
+        perspective: $eloignement-cube;
+    }
+}
+.face {
+    width: $dimfaces;
+    height: $dimfaces;
+}
+
+}
+
+@media screen and (min-width: 760px) {
+    $proportions-cube: 1;
+    $vitesse-cube : 15s;
+    $eloignement-cube: 450px;
+    $dimfaces : 300px * $proportions-cube;
+    $posoeil : 150px * $proportions-cube;
+    
+    
+    .cube  {  
+
+        .container {
+          
+            transition: 1s ease-in-out;
+            width: $dimfaces;
+            height: 90px;
+            perspective: $eloignement-cube;
+        }
+    }
+    .face {
+        width: $dimfaces;
+        height: $dimfaces;
+    }
+
+}
+

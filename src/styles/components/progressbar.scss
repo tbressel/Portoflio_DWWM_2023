@@ -1,0 +1,38 @@
+.progressbar {
+    .progressbar-container {
+        // border: 2px dotted red;
+        width: fit-content;
+        height:100px;
+        margin: auto;
+        .progressbar-container-bar {
+            // background-color: red;
+            height: 100%;
+            width: 5px;
+        }
+    }
+}
+
+.barre {
+    height: .6rem;
+
+    border-radius: 50px;
+    margin-top: .2rem;
+    position: relative;
+    
+    &:after {
+        content: "";
+        position: absolute;
+        background: linear-gradient(90deg,$color0,$color2,$color5,$color4);
+        
+        border-radius: 50px;
+        height: 5px;
+        width: 0;
+        animation: linebar 0.5s ease-out forwards;
+        
+        @keyframes linebar {
+            to {
+                width: 100%;
+            }
+            }
+        }
+    }

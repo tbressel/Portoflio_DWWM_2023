@@ -1,0 +1,59 @@
+.languages, .frameworks {
+    padding-bottom: 20px;
+    
+    .languages-content, .frameworks-content {
+        
+        li {
+         display: block;
+         color: $color-h1;
+         font-size: 0.8rem;
+         padding: 5px;
+         font-family: $fnt-opensans;
+        }
+        .annees {
+            
+            font-size: .7rem;
+            display: flex;
+            justify-content: space-between;
+
+        span {
+            width: 33%;
+            color: $color-label;
+            font-family: $fnt-opensans;
+            padding-bottom: 10px;
+            &:nth-child(2) {
+                text-align: right;
+                width: 10%;
+            }
+
+            &:nth-child(3) {
+                text-align: right;
+                width: 10%;
+            }
+            &:nth-child(4) {
+                text-align: right;
+                width: 9%;
+            }
+            &:nth-child(5) {
+                text-align: right;
+                width: 30%;
+            }
+
+            &:nth-child(2):before,
+            &:nth-child(3):before,
+            &:nth-child(4):before,
+            &:nth-child(5):before {
+                content: " ";
+                border-left: 3px dotted rgba(128, 128, 128, 0.466);
+                position: absolute;
+                height: 90px;
+                transform: translate(9px, 19px);
+            }
+        }
+
+        .ListLanguages, ListFrameworks {
+            padding-top: .5rem;
+            }
+        }
+    }
+}

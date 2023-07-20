@@ -1,0 +1,41 @@
+.otherskills {
+    .otherskills-content {
+        .otherskills-content-col1 {
+            li {
+                display: block;
+                img {
+                    width: 20px;
+                    height:20px;
+                    vertical-align: middle;
+                    padding: .2rem;
+                }
+            }
+            span {
+                color: $color-h1;
+                font-family: $fnt-opensans;
+                vertical-align: middle;
+                font-size: 0.8rem;
+                margin-left: 1rem;
+            }
+        }
+        .otherskills-content-col2 {
+            li {
+                display: block;
+                img {
+                    width: 20px;
+                    height:20px;
+                    vertical-align: middle;
+                    padding: .2rem;
+                }
+            }
+            span {
+                color: $color-h1;
+                font-size: 0.8rem;
+                font-family: $fnt-opensans;
+                vertical-align: middle;
+                margin-left: 1rem;
+            }
+        }
+                
+    }
+}

@@ -1,0 +1,204 @@
+.home {
+
+    .home-anim {
+        animation-name: fond;
+        position: relative;
+        background-image: url("../../../public/medias/code.png");
+        animation-duration: 20s;
+        animation-fill-mode:none;
+        animation-iteration-count: infinite;
+        transition: 500ms ease-in-out;
+    }
+
+
+    h1 {
+        font-family: $fnt-passion;
+        font-size: 2.5rem;
+        font-weight: 100;
+        text-align: left;
+        line-height: 2.5rem;
+        color: $color-h1;
+        transition: 1s ease-in-out;
+        padding: 1rem;
+    }
+
+    h4 {
+        font-family: $fnt-opensans;
+        font-size: 16px;
+        font-weight: 100;
+        letter-spacing: 0.2rem;
+        color: $color-h4;
+        transition: 1s ease-in-out;
+        padding: .5rem;
+    }
+
+    .home-content {
+        position: relative;
+        @include boite-central;
+        
+        .home-content-link span:hover {
+            
+            background-color: $color-h3-orange ;
+            color: $color-body;
+            transition: 500ms ease-in-out;
+        }
+
+        .home-content-link::before {
+            font-family: $fnt-aurore;
+            color: $color-label;
+            content: "<a href=";
+        }
+
+        .home-content-text {
+            h1::before {
+                font-family: $fnt-aurore;
+                font-size: 3rem;
+                color: $color-label;
+                content: "<html>";
+            }
+            
+            h1::after {
+                font-size: 3rem;
+                font-family: $fnt-aurore;
+                color: $color-label;
+                content: "</br>";
+            }
+        }
+
+        .home-content-pdf {
+            font-family: $fnt-opensans;
+            float: right;
+            margin-top: 2rem;
+            margin-left: 1rem;
+            margin-bottom: 2rem;
+            padding: 0.8rem;
+            border: 2px solid $color-h3-orange ;
+            color: $color-h3-orange ;
+        }
+
+        .home-subtitle::after {
+            display: block;
+            margin-top: 20px;
+            font-family: $fnt-aurore;
+            font-size: 2rem;
+            color: $color-label;
+            content: "</html>";
+        }
+    
+    }
+}
+
+
+@keyframes fond {
+    0% {background-position: 0px 0px;
+        background-size: 200%;}
+    25% {background-position: 5px -10px;
+        background-size: 198%;}
+    50% {background-position: 15px -12px;
+        background-size: 195%;}
+    75% {background-position: -10px 15px;
+        background-size: 198%;}
+    90% {background-position: 0px 0px;
+        background-size: 200%;}
+    
+    100% {background-position: 0px 0px;
+        background-size: 200%;}
+    
+    
+}
+
+
+@media screen and (min-width: 560px) {
+    .home-content-text {
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 4rem;
+            transition: 1s ease-in-out;
+        }
+
+
+
+        h3 {
+            transition: 1s ease-in-out;
+            font-size: 1.8rem;
+        }
+
+        h4 {
+            transition: 1s ease-in-out;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .home-content-text {
+
+        h1 {
+            font-size: 4.9rem;
+            line-height: 5.4rem;
+            transition: 1s ease-in-out;
+        }
+
+
+        h3 {
+            transition: 1s ease-in-out;
+            font-size: 2.8rem;
+        }
+
+        h4 {
+            transition: 1s ease-in-out;
+            font-size: 2rem;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+
+        .home-content {
+            position: absolute;
+            left: 300px;
+            width: 70%;
+        
+
+        }
+
+        .navigation {
+            grid-area: nav;
+            position: absolute;
+            width: 290px;
+            height: 100%;
+            top: -20px;
+            border-radius: 0;
+
+
+            ul {
+
+                display: block;
+                padding-left: 20%;
+                margin-top: 400px;
+
+                li {
+                    display: block;
+
+                    img {
+
+                        padding: 1rem 1.9rem 0 0;
+                        margin-top: 0.3rem;
+
+
+                    }
+
+                    span {
+                        display: inline;
+                        opacity: 1;
+                        transition: 1s ease-in-out;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+}

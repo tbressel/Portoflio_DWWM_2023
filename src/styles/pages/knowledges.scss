@@ -1,0 +1,156 @@
+.knowledges {
+    
+    .knowledges-content {
+        display: grid;
+        grid-template-areas: 
+            "frame"
+            "exp"
+            "lang"
+            "skills"
+            "hobbies";
+        grid-template-columns: 1fr;
+
+        .knowledges-content-languages {
+            grid-area: lang;
+            @include boite;
+            h3 {
+                padding: 10px;
+                color: $color-h3-bottlelow;
+                font-family: $fnt-opensans;
+                font-size: 14px;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+           }
+        }
+
+        .knowledges-content-frameworks {
+            grid-area: frame;
+            @include boite;
+        }
+
+        .knowledges-content-experiences {
+            grid-area: exp;
+            @include boite;
+
+        }
+
+        .knowledges-content-otherskills {
+            grid-area: skills;
+            @include boite;
+            h3 {
+                padding: 10px;
+                color: $color-h3-orange;
+                font-family: $fnt-opensans;
+                font-size: 14px;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+           }
+        }
+
+        .knowledges-content-hobbies {
+            grid-area: hobbies;
+            @include boite;
+            h3 {
+                padding: 10px;
+                color: $color-h3-red;
+                font-family: $fnt-opensans;
+                font-size: 14px;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+           }
+        }
+
+
+    }
+
+}
+
+@media screen and (min-width:560px) {
+    .knowledges {
+        .knowledges-content {
+            display: grid;
+            grid-template-areas: 
+            "exp exp"
+            "lang lang"
+               
+                "skills skills"
+                "hobbies hobbies";
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (min-width:760px) {
+    .knowledges {
+        .knowledges-content {
+            display: grid;
+            grid-template-areas: 
+                "exp exp"
+                "lang lang"
+                "skills hobbies";
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (min-width:960px) {
+    .knowledges {
+        .knowledges-content {
+            display: grid;
+            grid-template-areas: "exp exp exp"
+
+                "skills hobbies lang ";
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        .knowledges {
+
+            .knowledges-content {
+               
+                display: grid;
+                grid-template-areas: "nav exp exp exp"
+                    "nav exp exp exp"
+                    "nav skills hobbies lang ";
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        .navigation {
+            grid-area: nav;
+            position: absolute;
+            width: 290px;
+            height: 750px;
+            margin-top: -5px;
+
+            ul {
+
+                display: block;
+                padding-left: 20%;
+                margin-top: 40px;
+
+                li {
+                    display: block;
+
+                    img {
+
+                        padding: 1rem 1.9rem 0 0;
+                        margin-top: 0.3rem;
+
+
+                    }
+
+                    span {
+                        display: inline;
+                        opacity: 1;
+                        
+                        transition: 1s ease-in-out;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

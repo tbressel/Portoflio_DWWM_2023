@@ -1,0 +1,81 @@
+.planet-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 360px;
+    width : 110%;
+    margin-left: -15px;
+    margin-right: 0;
+    perspective: 1200px;
+    perspective-origin: 50% 50%;
+ 
+
+    .planet:before {
+        content: "";
+        position: absolute;
+ 
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: -40px 10px 70px 10px #05aa911a inset;
+        z-index: 2;
+      }
+      
+
+.planet {    
+    position: relative;
+     
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 50%;
+    background: url('../../../public/medias/carte_etire.png') repeat-x;
+    background-size: auto 100%;
+    animation: move-map 60s infinite linear;
+
+  }
+
+
+  .planet:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background: radial-gradient(circle at 40% 0%, #81e8f6, #56a3af 10%, #034177 66%, #062745 100%);
+  }
+
+
+  .planet .shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    transform: rotateX(90deg) translateZ(-150px);
+    z-index: -1;
+  }
+
+}
+  
+ 
+  @keyframes move-map {
+    0% {background-position: -849px 0; }
+    100% {background-position: 0 0; } 
+  }
+
+
+
+
+      @media screen and (min-width:1200px) {
+
+        .planet-container {
+            height: 360px;
+            width : 110%;
+            margin-left: 7%;
+
+        }
+      }

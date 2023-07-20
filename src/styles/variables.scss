@@ -1,0 +1,90 @@
+// ---------------------------
+// VARIABLES POUR LES COULEURS 
+// ---------------------------
+
+// couleur du fond du site
+$color-body: #1D1D1D;
+$color-box: #191919;
+$color-navbot : black;
+
+// Couleur des titres
+$color-h1 : #FFFFFF;
+$color-h2 : #08FDD8;
+
+$color-h3-red : #f50057;
+$color-h3-orange : #ffa500;
+$color-h3-bottle : #81d8f7;
+$color-h3-bottlelow : #08fdd8;
+
+$color-h4 : #a2a2a3;
+
+$color-txt : #909096;
+
+// couleur des titre en couleurs
+
+// Couleur des chapeaux
+$color-hat : #343434;
+$color-label : #666565;
+
+// Contour des boutons
+$color-btn : #08fdd899;
+$color-btn-shadow1 : #2e2e2e;
+$color-btn-shadow2 : #2b2b2b;
+$color-btn-off : black;
+$color-btn-on : #011b17;
+
+
+
+// couleur du texte boite
+// $color9: rgb(20, 182, 211);
+$color9:rgb(238, 238, 238);;
+
+// bordure des faces du cube
+$color1: #252521;
+
+// couleur des faces du cube
+$color2bis: #08fdd859;
+
+// hover des faces du cube
+$color4bis: #00728f9a;
+
+// une des couleur de la barre de progression
+$color0: #08fdd859;
+$color2: #08fdd899;
+$color5: #08fdd8;
+$color4: #81d8f7;
+
+
+
+
+$btn-color1 : rgb(46, 46, 46);
+$btn-color2 : rgb(75, 75, 75);
+$btn-color3 : rgb(3, 3, 3);
+
+
+// ---------------------------
+// VARIABLES POUR LES POLICES 
+// ---------------------------
+
+$fnt-passion : 'Passion One', cursive;
+$fnt-aurore : 'La Belle Aurore', cursive;
+$fnt-opensans : 'Open Sans', sans-serif;
+
+
+@mixin boite () {
+    background-color: $color-body;
+    box-shadow: 0 0 5px 5px $color-box;
+    border-radius : 0px;
+    margin: .3rem;
+    padding: 0.2rem;
+    
+}
+
+@mixin boite-central () {
+    
+    border-radius : 10px;
+    margin: .3rem;
+    padding: 0.2rem;
+    color: $color9;    
+}
+

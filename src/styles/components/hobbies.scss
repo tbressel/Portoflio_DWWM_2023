@@ -1,0 +1,29 @@
+.hobby {
+
+    .hobby-content {
+        ul {
+            li {
+                display: block;
+                img {                    
+                    vertical-align: middle;
+                    height:20px;
+                    width:20px;           
+                    padding: .2rem;
+                 }
+                span {
+                    color: $color-h1;
+                    font-family: $fnt-opensans;
+                    font-size: 0.8rem;
+                    margin-left: 1rem;
+                    vertical-align: middle;
+                }
+
+            }
+
+        }
+    }
+}
+
+// .hobby .hobby-content ul li span {
+//     background-color: aqua;
+// }
