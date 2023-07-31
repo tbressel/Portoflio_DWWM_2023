@@ -21,6 +21,21 @@ const Sites = () => {
 
                 <div className='sites-container__images'>
 
+                <figure className='site2'>
+                    <h3>
+                        Initiative Les Arbres Verts
+                    </h3>
+                    <figcaption>
+                        Intégration 'mobile first' réalisée à partir d'une maquette fournie. Cette intégration HTML / CSS à été réalisée dans le cadre 
+                        de ma formation. Elle est également disponible sur mon gitHub.<br />
+                        <span>
+                        Dernière mise à jour : <time dateTime='2023-07-31'>31-07-2023</time> <br/>
+                        </span>
+                        <a className='url' href='https://www.thomas-bressel.com/arbresverts' alt="Initiatives les arbres verts" target="_blank">www.thomas-bressel.com/arbresverts</a>                    
+                    </figcaption>
+                    <img src="./medias/InitiativesLesArbresVerts.png" alt="screenshot arbres verts" />
+                </figure>
+
                 <figure className='site1'>
                     <h3>
                         Thomas Bressel
@@ -34,7 +49,6 @@ const Sites = () => {
                     </figcaption>
                     <img src="./medias/thomasbressel-index-d.png" alt="screenshot thomasbressel" />
                 </figure>
-
 
                 <figure className='site2'>
                     <h3>
