@@ -1,19 +1,28 @@
+
+
+
+
+
 .sites-container__images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: block;
 }
 
 
 
 figure{
-    width : 250px;
-    height: auto;
+    overflow: hidden;
+    width : 100%;
+    height: 30px;
+    border: 2px solid $color-btn;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    padding: 10px;
     
     
     img {
-        width: 248px;
-        height: 1px;
+
+        width: 100%;
+        // height: 1px;
         margin-top: 40px;
     }
 
@@ -22,6 +31,7 @@ figure{
         font-size: 0.8rem;
         font-family: $fnt-opensans;
         line-height: 1.2rem;
+        margin-bottom: 20px;
         
     }
 
@@ -34,71 +44,60 @@ figure{
 
 }
 
+.integration {
+    iframe {
 
-.site1 {
-    animation-name: anim-site1;
-    animation-delay: 100ms;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-
-    img {
-        animation-name: anim-img1;
-        animation-delay: 1s;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
+        width: 100vw;
+        height: 300px;
+        
     }
 }
 
-.site2 {
-    animation-name: anim-site2;
-    animation-delay: 400ms;
-    animation-duration: 500ms;
+
+
+figure {
+    animation-name: anim-site;
+    animation-delay: 500ms;
+    animation-duration: 1000ms;
     animation-fill-mode: forwards;
-    img {
-        animation-name: anim-img2;
-        animation-delay: 1s;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
+}
+
+
+
+@media (min-width:700px) {
+    .integration {
+        iframe {
+            width: 100vw;
+            height: 500px;
+            
+        }
     }
+    
 }
 
-.site3 {
-    animation-name: anim-site3;
-    animation-delay: 800ms;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-    img {
-        animation-name: anim-img3;
-        animation-delay: 1s;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
+
+@media (min-width:1200px)
+{
+
+
+    .integration {
+        iframe {
+            width: 100%;
+            height: 700px;
+            
+        }
     }
+    
+
+
 }
 
-@keyframes anim-site1 {
-    0% {opacity: 0;}
-    100% {opacity: 100%;}
+
+
+
+@keyframes anim-site {
+    0% {height: 30px;}
+    100% {height: initial;}
 }
 
-@keyframes anim-site2 {
-    0% {opacity: 0;}
-    100% {opacity: 100%;}
-}
 
-@keyframes anim-site3 {
-    0% {opacity: 0;}
-    100% {opacity: 100%;}
-}
-
-@keyframes anim-img1 {
-    0% {height: 1px;}
-    100% {height: 500px;}
-}
-@keyframes anim-img2 {
-    0% {height: 1px;}
-    100% {height: 500px;}
-}
-@keyframes anim-img3 {
-    0% {height: 1px;}
-    100% {height: 250px;}
-}

@@ -1,4 +1,5 @@
 .navigation {
+  
     display: block;
     background-color: $color-box;
     border-radius: 50px;
@@ -88,6 +89,7 @@
 // ---------------------------------------------------------------------
 @media screen and (min-width: 1200px) {
     .navigation {
+       
         background-image: linear-gradient($color-box, $color-box 50%, $color-navbot 50%, $color-body 90%);
         .navigation-bot-section {
             background-image: linear-gradient($color-box, $color-navbot);

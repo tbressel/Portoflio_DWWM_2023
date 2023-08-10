@@ -119,7 +119,7 @@
 
         .navigation {
             grid-area: nav;
-            position: absolute;
+            position: fixed;
             width: 290px;
             height: 750px;
             margin-top: -5px;

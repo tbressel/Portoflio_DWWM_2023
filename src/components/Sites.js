@@ -21,7 +21,25 @@ const Sites = () => {
 
                 <div className='sites-container__images'>
 
-                <figure className='site2'>
+                <figure className='site'>
+                    <h3>
+                        Galan Ciaga
+                    </h3>
+                    <figcaption>
+                        Intégration toujours 'mobile first' basé sur le modèle d'un site de mode. Menu mobile à tiroirs sur 3 niveaux, footer à tiroirs, choix de la présentation des produits, menu à scrolling horizontal. Cette intégration HTML / CSS et javascript à été réalisée dans le cadre de ma formation. Elle est également disponible sur mon gitHub.<br />
+                        <span>
+                        Dernière mise à jour : <time dateTime='2023-08-10'>10-08-2023</time> <br/>
+                        </span>
+                        <a className='url' href='https://www.thomas-bressel.com/galanciaga' alt="Initiatives les arbres verts" target="_blank">https://www.thomas-bressel.com/galanciaga</a>                    
+                    </figcaption>
+
+                    <div class="integration">            
+                        <iframe src="https://www.thomas-bressel.com/galanciaga"></iframe>
+                    </div>
+                    {/* <img src="./medias/InitiativesLesArbresVerts.png" alt="screenshot arbres verts" /> */}
+                </figure>
+
+                <figure className='site'>
                     <h3>
                         Initiative Les Arbres Verts
                     </h3>
@@ -33,10 +51,14 @@ const Sites = () => {
                         </span>
                         <a className='url' href='https://www.thomas-bressel.com/arbresverts' alt="Initiatives les arbres verts" target="_blank">www.thomas-bressel.com/arbresverts</a>                    
                     </figcaption>
-                    <img src="./medias/InitiativesLesArbresVerts.png" alt="screenshot arbres verts" />
+
+                    <div class="integration">            
+                        <iframe src="https://www.thomas-bressel.com/arbresverts"></iframe>
+                    </div>
+                    {/* <img src="./medias/InitiativesLesArbresVerts.png" alt="screenshot arbres verts" /> */}
                 </figure>
 
-                <figure className='site1'>
+                <figure className='site'>
                     <h3>
                         Thomas Bressel
                     </h3>
@@ -47,10 +69,14 @@ const Sites = () => {
                         </span>
                         <a className='url' href='https://www.thomas-bressel.com/guitare' alt="Site Officiel Thomas Bressel Professeur de Guitare" target="_blank">www.thomas-bressel.com/guitare</a>                    
                     </figcaption>
-                    <img src="./medias/thomasbressel-index-d.png" alt="screenshot thomasbressel" />
+                    <div class="integration">            
+                        <iframe src="https://www.thomas-bressel.com/guitare"></iframe>
+                    </div>
+
+                    {/* <img src="./medias/thomasbressel-index-d.png" alt="screenshot thomasbressel" /> */}
                 </figure>
 
-                <figure className='site2'>
+                <figure className='site'>
                     <h3>
                         Le Studio 36
                     </h3>
@@ -61,11 +87,16 @@ const Sites = () => {
                         </span>
                         <a className='url' href='https://www.lestudio36musiquebayeux.com/' alt="Site Officiel du Studio 36" target='_blank'>www.lestudio36musiquebayeux.com</a>                    
                     </figcaption>
-                    <img src="./medias/studio36-index.png" alt="screenshot studio36" />
+
+                    <div class="integration">            
+                        <iframe src="https://www.lestudio36musiquebayeux.com/"></iframe>
+                    </div>
+
+                    {/* <img src="./medias/studio36-index.png" alt="screenshot studio36" /> */}
                 </figure>
 
 
-                <figure className='site3'>
+                <figure className='site'>
                     <h3>
                         Amstariga
                     </h3>
@@ -79,7 +110,10 @@ const Sites = () => {
                         
                         <a className='url' href='https://www.amstariga.net/' alt="Site Amstariga" target='_blank'>www.amstariga.net/</a>                    
                     </figcaption>
-                    <img src="./medias/amstariga-index-d.png" alt="screenshot amstariga" />
+                    <div class="integration">            
+                        <iframe src="https://www.amstariga.net/"></iframe>
+                    </div>
+                    {/* <img src="./medias/amstariga-index-d.png" alt="screenshot amstariga" /> */}
                 </figure>
              
 

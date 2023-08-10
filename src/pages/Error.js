@@ -1,5 +1,5 @@
 import React from 'react';
-import Cube from '../components/home/Cube';
+import Canvas from '../components/error/Canvas';
 
 
 
@@ -12,14 +12,18 @@ const Error = () => {
             <div className="erreur-content">
                 <div className="erreur-content-retour">
                     <a href="/home">
-                        <span>Accueil</span>
+                        <span>Retour à l'Accueil</span>
                     </a>
                 </div>
                 <div className="erreur-content-text">
-                    <h4>Fatal Error : 666</h4>
-                    <h3>Cette page ou ce fichier n'existe pas</h3>
+                    <h4></h4>
+                    <h3>Cette page ou ce fichier n'existe pas !</h3>
                 </div>
 
+
+                <div className='canvas-container'>
+                    <Canvas />
+                </div>
 
             </div> 
         </div>
