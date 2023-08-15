@@ -21,11 +21,12 @@ const SocialNetworks = () => {
                         <img src="./medias/itch-io.svg" alt="icn-itchio" />
                     </a>
                 </li>
-                {/* <li>
-                    <a href="#" alt="no link">
-                        <img src="./medias/square-facebook.svg" alt="icn-facebook" />
+               <li>
+                    <a href="https://twitter.com/ThomasBres99806" alt="x" target="_blank">
+                        <img src="./medias/x.svg" alt="icn-x"/>
                     </a>
                 </li>
+                 {/* 
                 <li>
                     <a href="#">
                         <img src="./medias/discord.svg" alt="icn-discord" />

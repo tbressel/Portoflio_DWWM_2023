@@ -7,10 +7,10 @@ const ProgressBar = (parametresRecus) => {
             <h3>{parametresRecus.parametre2}</h3>
             <div className="annees">
                 <span>Mon expérience</span>
-                <span>25 %</span>
-                <span>50 %</span>
-                <span>75 %</span>
-                <span>100 %</span>
+                <span>3 ans</span>
+                <span>5 ans</span>
+                <span>10 ans</span>
+                <span>20 ans</span>
             </div>
 
       

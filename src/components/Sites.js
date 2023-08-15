@@ -10,7 +10,7 @@ const Sites = () => {
                 <div className='sites-container__header'>
                     <h4>PORTFOLIO</h4>
                     <p>
-                    Voici une liste des sites internet les plus récents (réalisés entre 2017 et 2023) utilisant le CMS Joomla. Certains de ces sites ont été conçus pendant mon ancienne carrière pour répondre aux besoins des structures où j'ai travaillé. D'autres ont été créés dans le cadre de mes activités artistiques et pédagogiques. En outre, j'ai également réalisé des sites en lien avec mes hobbies, notamment dans le domaine du code assembleur sur d'anciennes machines.
+                    
                     </p>
                 </div>
 
@@ -20,31 +20,75 @@ const Sites = () => {
 
 
                 <div className='sites-container__images'>
+                <figure className='site'>
+                    <h3>
+                        Développeur & Integrateur
+                    </h3>
+                    <figcaption>
+                        Technologie : HTML / CSS / Javascript<br/>
+                        Framework / Librairie : Bootstrap <br/><br/>
+                        Contexte : Travail réalisé à Créative Formation. A partir d'une maquette de notre choix, travail d'intégration et d'utilisation de la librairie Bootstrap<br /><br />
+                        <span>
+                        Dernière mise à jour : <time dateTime='2023-08-11'>15-08-2023</time> <br/>
+                        </span>
+                        <a className='url' href='https://www.thomas-bressel.com/developpeur' alt="Développeur & Integrateur" target="_blank">https://www.thomas-bressel.com/developpeur</a>                    
+                    </figcaption>
+
+                    <div class="integration">            
+                        <iframe src="https://www.thomas-bressel.com/developpeur"></iframe>
+                    </div>
+                   
+                </figure>
+
+                <figure className='site'>
+                    <h3>
+                        Deklic
+                    </h3>
+                    <figcaption>
+                        Technologie : HTML / CSS / Javascript<br/>
+                        Framework / Librairie : Bootstrap <br/><br/>
+                        Contexte : Travail réalisé à Créative Formation. A partir d'une maquette figma et selon les instructions du clients, je devais produire cette page avec 2 points de responsivités et intégrer un élement Javascript pré codé, transmit par notre formateur. J'ai recodé mon propre compte à rebours et ajouté un 3eme points de responsivité. Cette page a été refaite avec en partie Bootstrap.<br />
+                        Technologie : HTML / CSS / Javascript
+                        Travail d'intégration d'une Landing Page, avec des animations et un compte à rebours. Travail réalisé à partir d'une maquette Figma, en html / CSS et Javascript<br />
+                        <span>
+                        Dernière mise à jour : <time dateTime='2023-08-11'>11-08-2023</time> <br/>
+                        </span>
+                        <a className='url' href='https://www.thomas-bressel.com/deklic' alt="Deklic" target="_blank">https://www.thomas-bressel.com/deklic</a>                    
+                    </figcaption>
+
+                    <div class="integration">            
+                        <iframe src="https://www.thomas-bressel.com/deklic"></iframe>
+                    </div>
+               
+                </figure>
+
 
                 <figure className='site'>
                     <h3>
                         Galan Ciaga
                     </h3>
-                    <figcaption>
-                        Intégration toujours 'mobile first' basé sur le modèle d'un site de mode. Menu mobile à tiroirs sur 3 niveaux, footer à tiroirs, choix de la présentation des produits, menu à scrolling horizontal. Cette intégration HTML / CSS et javascript à été réalisée dans le cadre de ma formation. Elle est également disponible sur mon gitHub.<br />
+                    <figcaption>Technologie : HTML / CSS / Javascript<br/>
+                        Framework / Librairie : Bootstrap <br/><br/>
+                        Contexte : Intégration 'mobile first' basé sur le modèle d'un site de mode. Menu mobile à tiroirs sur 3 niveaux, footer à tiroirs, choix de la présentation des produits, menu à scrolling horizontal. Cette intégration à été réalisée dans le cadre de Créative formation.<br />
                         <span>
                         Dernière mise à jour : <time dateTime='2023-08-10'>10-08-2023</time> <br/>
                         </span>
-                        <a className='url' href='https://www.thomas-bressel.com/galanciaga' alt="Initiatives les arbres verts" target="_blank">https://www.thomas-bressel.com/galanciaga</a>                    
+                        <a className='url' href='https://www.thomas-bressel.com/galanciaga' alt="Galan Ciaga" target="_blank">https://www.thomas-bressel.com/galanciaga</a>                    
                     </figcaption>
 
                     <div class="integration">            
                         <iframe src="https://www.thomas-bressel.com/galanciaga"></iframe>
                     </div>
-                    {/* <img src="./medias/InitiativesLesArbresVerts.png" alt="screenshot arbres verts" /> */}
+                   
                 </figure>
 
                 <figure className='site'>
                     <h3>
                         Initiative Les Arbres Verts
                     </h3>
-                    <figcaption>
-                        Intégration 'mobile first' réalisée à partir d'une maquette fournie. Cette intégration HTML / CSS à été réalisée dans le cadre 
+                    <figcaption>Technologie : HTML / CSS / Javascript<br/>
+                        Framework / Librairie : Bootstrap <br/><br/>
+                        Contexte : Intégration 'mobile first' réalisée à partir d'une maquette fournie. Cette intégration HTML / CSS à été réalisée dans le cadre 
                         de ma formation. Elle est également disponible sur mon gitHub.<br />
                         <span>
                         Dernière mise à jour : <time dateTime='2023-07-31'>31-07-2023</time> <br/>
@@ -55,15 +99,16 @@ const Sites = () => {
                     <div class="integration">            
                         <iframe src="https://www.thomas-bressel.com/arbresverts"></iframe>
                     </div>
-                    {/* <img src="./medias/InitiativesLesArbresVerts.png" alt="screenshot arbres verts" /> */}
+                   
                 </figure>
 
                 <figure className='site'>
                     <h3>
                         Thomas Bressel
                     </h3>
-                    <figcaption>
-                        Site concernant mes activités artistiques et pédagogique depuis 1999 <br />
+                    <figcaption>Technologie : CMS Joomla<br/>
+                       <br/>
+                        Contexte : Site concernant mes activités artistiques et pédagogique depuis 1999 <br />
                         <span>
                         Dernière mise à jour : <time dateTime='2023-06-23'>23-06-2023</time> <br/>
                         </span>
@@ -80,8 +125,9 @@ const Sites = () => {
                     <h3>
                         Le Studio 36
                     </h3>
-                    <figcaption>
-                        Site de la structure dans laquelle j'exerce en tant que professeur de guitare & basse <br />
+                    <figcaption>Technologie : CMS Joomla<br/>
+                       <br/>
+                       Contexte : Site de la structure dans laquelle j'exerce en tant que professeur de guitare & basse <br />
                         <span>
                         Dernière mise à jour : <time dateTime='2023-06-16'>16-06-2023</time><br/>
                         </span>
@@ -91,8 +137,6 @@ const Sites = () => {
                     <div class="integration">            
                         <iframe src="https://www.lestudio36musiquebayeux.com/"></iframe>
                     </div>
-
-                    {/* <img src="./medias/studio36-index.png" alt="screenshot studio36" /> */}
                 </figure>
 
 
@@ -100,9 +144,10 @@ const Sites = () => {
                     <h3>
                         Amstariga
                     </h3>
-                    <figcaption>
+                    <figcaption>Technologie : CMS Joomla<br/>
+                       <br/>
                    
-                        Site internet regroupant mes hobbies concernant les jeux vidéo rétro et le coding en assembleur sur de vieilles machines<br />
+                       Contexte : Site internet regroupant mes hobbies concernant les jeux vidéo rétro et le coding en assembleur sur de vieilles machines<br />
                                          
                         <span>
                         Dernière mise à jour : <time dateTime='2022-09-12'>12-09-2022</time> <br/>
